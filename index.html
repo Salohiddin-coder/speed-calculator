@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Speed Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="window">
+      <h1 class="window__title">A Web Page</h1>
+
+      <div class="window__box">
+        <img class="window__img" src="./images/arrow.png" alt="left arrow" width="20" height="20">
+        <img class="window__img" src="./images/right-arrow.png" alt="right arrow" width="20" height="20">
+        <img class="window__img" src="./images/reload.png" alt="reload button" width="20" height="20">
+
+        <div class="window__inner">
+          <img class="window__img" style="margin-right: 5px;" src="./images/magnifying-glass.png" alt="search button" width="20" height="20">
+          <form method="get">
+            <input class="window__search" type="text" placeholder="https://" readonly>
+          </form>
+        </div>
+
+        <svg viewBox='0 0 10 8' width='30'>
+          <path d='M1 1h8M1 4h 8M1 7h8' 
+                stroke='#6D6D6B' 
+                stroke-width='2' 
+                stroke-linecap='round'/>
+        </svg>
+      </div>
+
+      <h2 class="window__info">Kim birinchi bo-rish-ga!</h2>
+
+      <form class="form" method="post">
+        <label class="form__label">Masofa
+          <input class="form__input" type="number" placeholder="Masofani kilometrda kirit">
+        </label>
+
+        <button class="form__button" type="submit">Hisobla</button>
+      </form>
+
+      <ul class="list">
+        <li class="list__item">
+          <p class="list__title">Piyoda</p>
+          <span class="list__result human">N soat</span>
+        </li>
+
+        <li class="list__item">
+          <p class="list__title">Velosiped</p>
+          <span class="list__result bike">N soat</span>
+        </li>
+
+        <li class="list__item">
+          <p class="list__title">Mashina</p>
+          <span class="list__result car">N soat</span>
+        </li>
+
+        <li class="list__item">
+          <p class="list__title">Samolyot</p>
+          <span class="list__result plane">N soat</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
